@@ -2,6 +2,13 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+generated-test-sources
+reports
+surefire-reports
+test-classes
+maven-status
+.idea
+
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
@@ -11,6 +18,7 @@ target/
 *.iws
 *.iml
 *.ipr
+
 
 ### Eclipse ###
 .apt_generated
