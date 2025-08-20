@@ -36,16 +36,15 @@ public class RunBase {
 
             case "chrome-ci":
                 ChromeOptions optionsCi = new ChromeOptions();
-                optionsCi.addArguments("--headless"); // modo headless
-                optionsCi.addArguments("--disable-gpu"); // recomendado em headless
-                optionsCi.addArguments("--window-size=1920,1080"); // tamanho da janela
+                optionsCi.addArguments("--headless");
+                optionsCi.addArguments("--disable-gpu");
+                optionsCi.addArguments("--window-size=1920,1080");
                 return new ChromeDriver(optionsCi);
 
             case "firefox":
                 FirefoxDriver firefoxDriver = new FirefoxDriver();
                 firefoxDriver.manage().window().maximize();
                 return firefoxDriver;
-
             default:
                 throw new IllegalArgumentException("Navegador não suportado: " + browser);
         }

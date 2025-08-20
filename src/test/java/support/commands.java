@@ -21,7 +21,7 @@ public class commands extends RunCucumber {
     }
 
     public static void clickElement(By element) {
-        System.out.println("##################################");
+        System.out.println("#########################");
         try {
             System.out.println("Vai clicar no elemento: " + element);
             waitElementBeClickable(element, 10);
@@ -31,11 +31,11 @@ public class commands extends RunCucumber {
             System.out.println("********** Aconteceu um erro ao tentar clicar no elemento: " + element);
             error.printStackTrace();
         }
-        System.out.println("##################################");
+        System.out.println("#########################");
     }
 
     public static void preencherCampo(By element, String value) {
-        System.out.println("##################################");
+        System.out.println("#########################");
         try {
             System.out.println("Vai preencher o campo: " + element);
             waitElementBeVisible(element, 10);
@@ -45,24 +45,16 @@ public class commands extends RunCucumber {
             System.out.println("********** Aconteceu um erro ao tentar preencher o campo: " + element);
             error.printStackTrace();
         }
-        System.out.println("##################################");
+        System.out.println("#########################");
     }
 
     public static void checarMensagem(By element, String expectedMessage) {
-        System.out.println("##################################");
+        System.out.println("#################");
         System.out.println("Vai validar mensagem: " + expectedMessage);
         waitElementBeVisible(element, 10);
         String actualMessage = getDriver().findElement(element).getText();
-
         Assert.assertEquals("Erro ao validar mensagens!", expectedMessage, actualMessage);
-
         System.out.println("Validou mensagem: " + expectedMessage);
-        System.out.println("##################################");
+        System.out.println("#########################");
     }
 }
-
-
-
-
-
-
