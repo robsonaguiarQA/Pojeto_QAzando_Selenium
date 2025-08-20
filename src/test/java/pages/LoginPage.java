@@ -17,7 +17,6 @@ public class LoginPage extends RunCucumber {
 
     // AÇÕES/ FUNÇÕES/ MÉTODOS
     public void acessaAplicacao() {
-        // Ideal abrir o driver antes em RunBase e aqui só navegar
         getDriver().get(URL);
     }
 
@@ -38,7 +37,7 @@ public class LoginPage extends RunCucumber {
     }
 
     public void verificarLoginSucesso() {
-        checarMensagem(By.id("swal2-title"), "Login realizado");
+        checarMensagem(By.id("swal2-title"),"Login realizado");
     }
 
     public void verificaCampoVazio(String mensagem) {

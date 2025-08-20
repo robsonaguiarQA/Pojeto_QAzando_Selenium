@@ -7,7 +7,7 @@ Funcionalidade: Cadastro de usuário
     Para finalizar uma compra no site
 
     @cadastro_usuario_sucesso
-    Cenário: Nome do usuário vazio
+    Cenário: Cadastro realizado com sucesso
         Dado que estou na tela de cadastro de usuário
         E preencho todos os campos obrigatórios
         Quando clico em cadastrar

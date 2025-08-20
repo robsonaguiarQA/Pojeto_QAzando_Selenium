@@ -18,7 +18,7 @@ public class LoginSteps extends RunCucumber {
     private long startTime;
     private static final long TIMEOUT_MS = 30000; // 10 segundos
 
-    // ----------------- Hooks -----------------
+    // Hooks
     @Before
     public void iniciarContagem(Scenario scenario) {
         startTime = System.currentTimeMillis();
@@ -47,7 +47,7 @@ public class LoginSteps extends RunCucumber {
         }
     }
 
-    // ----------------- Steps -----------------
+    // ----Steps
     @Dado("que estou na tela de login")
     public void Estou_na_tela_login() {
         loginPage.acessaAplicacao();

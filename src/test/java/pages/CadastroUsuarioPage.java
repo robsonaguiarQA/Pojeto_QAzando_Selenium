@@ -16,17 +16,17 @@ public class CadastroUsuarioPage extends RunCucumber {
 
     // AÇÕES/ FUNÇÕES/ MÉTODOS
     public void preencherNome(String nome) {
-        getDriver().findElement(campoNome).clear();
+        getDriver().findElement(campoNome);
         getDriver().findElement(campoNome).sendKeys(nome);
     }
 
     public void preencherEmail(String email) {
-        getDriver().findElement(campoEmail).clear();
+        getDriver().findElement(campoEmail);
         getDriver().findElement(campoEmail).sendKeys(email);
     }
 
     public void preencherSenha(String senha) {
-        getDriver().findElement(campoSenha).clear();
+        getDriver().findElement(campoSenha);
         getDriver().findElement(campoSenha).sendKeys(senha);
     }
 
